@@ -1,6 +1,6 @@
 
 <?php
-    $StatesArr = array("passive", "passive", "passive", "passive", "passive");
+    $statesArray = ["passive", "passive", "passive", "passive", "passive"];
 
     if (isset($_GET["Num"]))
     {
