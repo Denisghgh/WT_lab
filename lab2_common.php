@@ -4,7 +4,7 @@
 
     if (isset($_GET["Num"]))
     {
-        $Num = $_GET["Num"];
+        $num = $_GET["Num"];
 		$StatesArr[$_GET["Num"]-1] = "activ";
     }
 ?>
