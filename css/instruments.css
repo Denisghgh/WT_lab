@@ -1,0 +1,78 @@
+.instruments-wrapper {
+  max-width: 1280px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 35px;
+}
+.instruments-wrapper .instruments-list {
+  background-color: #fff;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-gap: 100px;
+  line-height: 18px;
+  font-family: 'Oswald', sans-serif;
+}
+.instruments-wrapper .instruments-list .list-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+}
+.instruments-wrapper .instruments-list .product-item {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 2px solid #F5F5F5;
+  background: white;
+  font-family: "Open Sans";
+  transition: 0.3s ease-in;
+}
+.instruments-wrapper .instruments-list .product-item:hover {
+  border-bottom: 2px solid #fc5a5a;
+}
+.instruments-wrapper .instruments-list .product-item img {
+  display: block;
+  width: 100%;
+}
+.instruments-wrapper .instruments-list .product-list {
+  background: #fafafa;
+  padding: 15px 0;
+}
+.instruments-wrapper .instruments-list .product-list h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444444;
+  margin: 0 0 10px 0;
+}
+.instruments-wrapper .instruments-list .price {
+  font-size: 16px;
+  color: #fc5a5a;
+  display: block;
+  margin-bottom: 12px;
+}
+.instruments-wrapper .instruments-list .button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 12px;
+  background: #cccccc;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 28px;
+  transition: 0.3s ease-in;
+}
+.instruments-wrapper .instruments-list .product-item:hover .button {
+  background: #fc5a5a;
+}
+@media all and (max-width: 767px) {
+  .instruments-wrapper .instruments-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
